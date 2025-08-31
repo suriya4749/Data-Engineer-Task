@@ -87,7 +87,7 @@ class MongoPipeline:
                 self.duplicates.insert_one(item)
             else:
                 update_fields = {}
-                for key in ["name", "specialities", "source_name", "url"]:
+                for key in ["name", "dob", "email", "specialities", "source_name", "url"]:
                     val = item.get(key)
                     if val:
                         update_fields[key] = val
@@ -114,6 +114,8 @@ class MongoPipeline:
                     """
                     MERGE (p:Profile {phone: $phone})
                     SET p.name = $name,
+                        p.dob = $dob,
+                        p.email = $email,
                         p.profile_id = $profile_id,
                         p.specialities = $specialities,
                         p.source_name = $source_name,
@@ -122,6 +124,8 @@ class MongoPipeline:
                     """,
                     phone=phone,
                     name=item.get("name"),
+                    dob=item.get("dob"),
+                    email=item.get("email"),
                     profile_id=item.get("profile_id"),
                     specialities=item.get("specialities"),
                     source_name=item.get("source_name"),

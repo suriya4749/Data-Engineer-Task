@@ -20,6 +20,8 @@ class IdentityItem(scrapy.Item):
     source_name = scrapy.Field()   # domain extracted from URL
     url = scrapy.Field()
     specialities = scrapy.Field()
+    dob = scrapy.Field()
+    email = scrapy.Field()
 
     # Enrichment fields
     profile_id = scrapy.Field()    # unique 5-digit ID
