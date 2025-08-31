@@ -50,7 +50,7 @@ You can trigger a **single spider** instead of all.
 #### Option 2: Use Airflow Variable
 You can set an Airflow **Variable** so you don’t need to pass config each time:
 1. In Airflow UI → **Admin → Variables → Create**
-   - Key: `SCRAPY_SPIDER`
+   - Key: `spider_name`
    - Value: `npi`
 2. Save it.
 3. Now, when you trigger the DAG normally, it will pick up this variable and run that spider.
