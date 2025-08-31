@@ -17,10 +17,11 @@ services:
       - NEO4J_USER=neo4j
       - NEO4J_PASSWORD=newpassword
     volumes:
-      - .:/opt/airflow/identity-mapping          # 👈 Full project mount
-      - ./dags:/opt/airflow/dags                 # DAGs visible in UI
+      - ./dags:/opt/airflow/dags
+      - ./plugins:/opt/airflow/plugins
+      - ./logs:/opt/airflow/logs
       - ./spiders.txt:/opt/airflow/identity-mapping/spiders.txt
-      - ./logs:/opt/airflow/logs                 # 👈 Host logs mount
+      - ./scraper:/opt/airflow/identity-mapping/scraper   # ✅ mount scraper folder
     depends_on:
       - postgres
       - mongo
@@ -41,18 +42,18 @@ services:
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
       - AIRFLOW__CORE__FERNET_KEY=1yzYrkH-Igsab7Gdsxmcg7Kx3wmgeUG84iAJLhPRkJ0=
     volumes:
-      - .:/opt/airflow/identity-mapping
       - ./dags:/opt/airflow/dags
+      - ./plugins:/opt/airflow/plugins
+      - ./logs:/opt/airflow/logs
       - ./spiders.txt:/opt/airflow/identity-mapping/spiders.txt
-      - ./logs:/opt/airflow/logs                 # 👈 Host logs mount
+      - ./scraper:/opt/airflow/identity-mapping/scraper   # ✅ same here
     depends_on:
-      - airflow-webserver
       - postgres
       - mongo
       - neo4j
 
   # -------------------
-  # Postgres (for Airflow metadata)
+  # Postgres
   # -------------------
   postgres:
     image: postgres:14
@@ -68,7 +69,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
   # -------------------
-  # MongoDB (scraped data)
+  # MongoDB
   # -------------------
   mongo:
     image: mongo:6
@@ -80,7 +81,7 @@ services:
       - mongo_data:/data/db
 
   # -------------------
-  # Neo4j (graph storage)
+  # Neo4j
   # -------------------
   neo4j:
     image: neo4j:5
@@ -98,4 +99,3 @@ volumes:
   postgres_data:
   mongo_data:
   neo4j_data:
-
