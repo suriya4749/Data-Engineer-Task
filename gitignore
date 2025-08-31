@@ -48,3 +48,14 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+
+# Ignore runtime and system files
+logs/
+__pycache__/
+*.pyc
+*.log
+.env
+venv/
+.vscode/
+
