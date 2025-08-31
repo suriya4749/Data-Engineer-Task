@@ -49,7 +49,7 @@ class NpiregistrySpider(scrapy.Spider):
             except ValueError:
                 end = None
 
-            with open('scraper/npi.txt') as f:
+            with open('scraper/npi_ids.txt') as f:
                 data = [line.strip() for line in f if line.strip()]  # strip and skip blanks
                 data = data[start:end]
 
