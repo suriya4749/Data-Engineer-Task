@@ -1,4 +1,6 @@
 import logging
+import os
+
 BOT_NAME = "scraper"
 
 SPIDER_MODULES = ["scraper.spiders"]
@@ -7,25 +9,25 @@ NEWSPIDER_MODULE = "scraper.spiders"
 logging.getLogger("pymongo").setLevel(logging.ERROR)
 
 # -------------------
-# MongoDB configs (Docker service name)
+# MongoDB configs (Docker service name or env override)
 # -------------------
-MONGO_URI = "mongodb://mongo:27017"
-MONGO_DATABASE = "identity_db"   # keep consistent
-MONGO_COLLECTION = "profiles"
-DUPLICATES_COLLECTION = "profiles_duplicates"
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+MONGO_DATABASE = os.getenv("MONGO_DATABASE", "identity_db")
+MONGO_COLLECTION = os.getenv("MONGO_COLLECTION", "profiles")
+DUPLICATES_COLLECTION = os.getenv("DUPLICATES_COLLECTION", "profiles_duplicates")
 
 # -------------------
-# Neo4j configs (Docker service name)
+# Neo4j configs (Docker service name or env override)
 # -------------------
-NEO4J_URI = "bolt://neo4j:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "newpassword"
+NEO4J_URI = os.getenv("NEO4J_URI", "bolt://neo4j:7687")
+NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
+NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "newpassword")
 
 # -------------------
 # Proxy settings
 # -------------------
-PROXY_TOKEN = "5aa93984046948219deed2b41b2315996fc654e8be4"
-PROXY_ENABLED = True
+PROXY_TOKEN = os.getenv("PROXY_TOKEN", "5aa93984046948219deed2b41b2315996fc654e8be4")
+PROXY_ENABLED = os.getenv("PROXY_ENABLED", "True").lower() == "true"
 PROXY_URL = f"http://{PROXY_TOKEN}:@proxy.scrape.do:8080"
 
 DOWNLOADER_MIDDLEWARES = {
@@ -44,4 +46,3 @@ ITEM_PIPELINES = {
 }
 
 FEED_EXPORT_ENCODING = "utf-8"
-

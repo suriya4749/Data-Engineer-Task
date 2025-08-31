@@ -4,7 +4,7 @@ from colorama import Fore, Style
 from pymongo import MongoClient
 
 # Mongo setup
-client = MongoClient("mongodb://mongo:27017")
+client = MongoClient("mongodb://localhost:27017")
 db = client["profiles_db"]
 
 profiles = db["profiles"]

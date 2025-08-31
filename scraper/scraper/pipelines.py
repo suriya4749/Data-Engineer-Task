@@ -20,7 +20,7 @@ class MongoPipeline:
     @classmethod
     def from_crawler(cls, crawler):
         return cls(
-            mongo_uri=crawler.settings.get("MONGO_URI", "mongodb://mongo:27017"),
+            mongo_uri=crawler.settings.get("MONGO_URI", "mongodb://localhost:27017"),
             mongo_db=crawler.settings.get("MONGO_DATABASE", "profiles_db"),
             mongo_collection=crawler.settings.get("MONGO_COLLECTION", "profiles"),
             duplicates_collection=crawler.settings.get("DUPLICATES_COLLECTION", "profiles_duplicates"),
