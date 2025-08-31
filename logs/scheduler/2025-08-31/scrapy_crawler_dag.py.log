@@ -1,0 +1,224 @@
+[2025-08-31T15:08:39.898+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:08:39.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:08:39.912+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:08:39.912+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:08:39.919+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:08:39.966+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:08:39.966+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:08:39.980+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:08:39.980+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:08:40.003+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.112 seconds
+[2025-08-31T15:09:10.512+0000] {processor.py:161} INFO - Started process (PID=165) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:09:10.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:09:10.515+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:09:10.514+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:09:10.525+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:09:10.553+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:09:10.552+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:09:10.566+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:09:10.566+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:09:10.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.086 seconds
+[2025-08-31T15:09:40.702+0000] {processor.py:161} INFO - Started process (PID=173) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:09:40.703+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:09:40.705+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:09:40.705+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:09:40.718+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:09:40.934+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:09:40.934+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:09:40.947+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:09:40.947+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:09:40.970+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.276 seconds
+[2025-08-31T15:10:11.151+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:10:11.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:10:11.155+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:10:11.154+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:10:11.164+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:10:11.210+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:10:11.210+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:10:11.224+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:10:11.223+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:10:11.245+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.099 seconds
+[2025-08-31T15:10:41.314+0000] {processor.py:161} INFO - Started process (PID=200) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:10:41.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:10:41.316+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:10:41.316+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:10:41.326+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:10:41.360+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:10:41.360+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:10:41.372+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:10:41.372+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:10:41.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.085 seconds
+[2025-08-31T15:11:11.568+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:11:11.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:11:11.571+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:11:11.571+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:11:11.580+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:11:11.616+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:11:11.615+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:11:11.631+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:11:11.631+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:11:11.664+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.103 seconds
+[2025-08-31T15:11:41.741+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:11:41.742+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:11:41.744+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:11:41.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:11:41.753+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:11:41.792+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:11:41.792+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:11:41.805+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:11:41.805+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:11:41.825+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.089 seconds
+[2025-08-31T15:12:11.913+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:12:11.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:12:11.916+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:12:11.916+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:12:11.925+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:12:11.958+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:12:11.957+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:12:11.972+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:12:11.971+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:12:11.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.086 seconds
+[2025-08-31T15:12:42.175+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:12:42.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:12:42.177+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:12:42.177+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:12:42.189+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:12:42.222+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:12:42.222+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:12:42.236+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:12:42.236+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:12:42.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.087 seconds
+[2025-08-31T15:13:12.397+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:13:12.400+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:13:12.404+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:13:12.403+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:13:12.423+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:13:12.464+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:13:12.464+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:13:12.478+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:13:12.478+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:13:12.498+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.107 seconds
+[2025-08-31T15:14:32.541+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:14:32.543+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:14:32.547+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:14:32.547+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:14:32.554+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:14:32.582+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:14:32.582+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:14:32.593+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:14:32.593+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:14:32.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.074 seconds
+[2025-08-31T15:15:02.750+0000] {processor.py:161} INFO - Started process (PID=165) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:15:02.751+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:15:02.753+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:15:02.753+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:15:02.761+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:15:02.868+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:15:02.868+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:15:02.880+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:15:02.879+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:15:02.907+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.162 seconds
+[2025-08-31T15:15:32.951+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:15:32.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:15:32.955+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:15:32.955+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:15:32.963+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:15:32.999+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:15:32.998+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:15:33.012+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:15:33.012+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:15:33.033+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.086 seconds
+[2025-08-31T15:16:03.120+0000] {processor.py:161} INFO - Started process (PID=196) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:16:03.121+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:16:03.123+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:16:03.122+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:16:03.132+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:16:03.174+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:16:03.174+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:16:03.188+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:16:03.188+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:16:03.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.101 seconds
+[2025-08-31T15:16:33.365+0000] {processor.py:161} INFO - Started process (PID=201) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:16:33.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:16:33.368+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:16:33.368+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:16:33.376+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:16:33.410+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:16:33.410+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:16:33.423+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:16:33.423+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:16:33.443+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.087 seconds
+[2025-08-31T15:17:03.541+0000] {processor.py:161} INFO - Started process (PID=206) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:17:03.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:17:03.543+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:17:03.543+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:17:03.553+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:17:03.588+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:17:03.587+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:17:03.601+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:17:03.601+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:17:03.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.087 seconds
+[2025-08-31T15:17:33.716+0000] {processor.py:161} INFO - Started process (PID=211) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:17:33.717+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:17:33.719+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:17:33.719+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:17:33.730+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:17:33.763+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:17:33.763+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:17:33.779+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:17:33.778+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:17:33.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.094 seconds
+[2025-08-31T15:18:03.964+0000] {processor.py:161} INFO - Started process (PID=216) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:18:03.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:18:03.967+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:18:03.966+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:18:03.976+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:18:04.008+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:18:04.007+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:18:04.021+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:18:04.021+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:18:04.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.085 seconds
+[2025-08-31T15:18:34.171+0000] {processor.py:161} INFO - Started process (PID=221) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:18:34.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:18:34.173+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:18:34.173+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:18:34.185+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:18:34.228+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:18:34.227+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:18:34.243+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:18:34.243+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:18:34.269+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.105 seconds
+[2025-08-31T15:19:04.386+0000] {processor.py:161} INFO - Started process (PID=226) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:19:04.387+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:19:04.390+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:19:04.389+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:19:04.398+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:19:04.433+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:19:04.432+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:19:04.445+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:19:04.445+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:19:04.475+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.095 seconds
+[2025-08-31T15:19:34.630+0000] {processor.py:161} INFO - Started process (PID=231) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:19:34.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:19:34.633+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:19:34.633+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:19:34.640+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:19:34.668+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:19:34.668+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:19:34.679+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:19:34.679+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:19:34.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.084 seconds
+[2025-08-31T15:20:04.845+0000] {processor.py:161} INFO - Started process (PID=236) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:20:04.855+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:20:04.857+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:20:04.857+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:20:04.867+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:20:04.900+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:20:04.900+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:20:04.913+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:20:04.913+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:20:04.934+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.095 seconds
+[2025-08-31T15:20:35.072+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:20:35.073+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:20:35.075+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:20:35.075+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:20:35.085+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:20:35.117+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:20:35.116+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:20:35.131+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:20:35.131+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:20:35.165+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.098 seconds
+[2025-08-31T15:21:05.257+0000] {processor.py:161} INFO - Started process (PID=246) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:21:05.259+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:21:05.262+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:21:05.261+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:21:05.274+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:21:05.308+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:21:05.308+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:21:05.324+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:21:05.323+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:21:05.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.097 seconds
+[2025-08-31T15:21:35.490+0000] {processor.py:161} INFO - Started process (PID=251) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:21:35.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:21:35.494+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:21:35.494+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:21:35.503+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:21:35.536+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:21:35.535+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:21:35.548+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:21:35.548+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:21:35.569+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.084 seconds
+[2025-08-31T15:22:05.688+0000] {processor.py:161} INFO - Started process (PID=256) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:22:05.691+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:22:05.692+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:22:05.692+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:22:05.704+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:22:05.740+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:22:05.739+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:22:05.753+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:22:05.753+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:22:05.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.098 seconds
+[2025-08-31T15:22:35.896+0000] {processor.py:161} INFO - Started process (PID=261) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:22:35.897+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:22:35.900+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:22:35.899+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:22:35.908+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:22:35.969+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:22:35.968+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:22:35.986+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:22:35.986+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:22:36.014+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.125 seconds
+[2025-08-31T15:23:06.219+0000] {processor.py:161} INFO - Started process (PID=266) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:23:06.220+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:23:06.225+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:23:06.222+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:23:06.251+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:23:06.400+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:23:06.399+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:23:06.418+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:23:06.418+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:23:06.450+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.249 seconds
+[2025-08-31T15:23:36.643+0000] {processor.py:161} INFO - Started process (PID=271) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:23:36.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:23:36.647+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:23:36.646+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:23:36.659+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:23:36.696+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:23:36.696+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:23:36.712+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:23:36.712+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:23:36.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.105 seconds
+[2025-08-31T15:24:06.790+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:24:06.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:24:06.793+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:24:06.793+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:24:06.801+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:24:06.832+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:24:06.832+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:24:06.844+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:24:06.844+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:24:06.873+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.088 seconds
+[2025-08-31T15:24:37.214+0000] {processor.py:161} INFO - Started process (PID=281) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:24:37.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:24:37.229+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:24:37.228+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:24:37.243+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:24:37.287+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:24:37.287+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:24:37.301+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:24:37.301+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:24:37.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.115 seconds
+[2025-08-31T15:25:07.401+0000] {processor.py:161} INFO - Started process (PID=286) to work on /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:25:07.402+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/scrapy_crawler_dag.py for tasks to queue
+[2025-08-31T15:25:07.407+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:25:07.404+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:25:07.431+0000] {processor.py:840} INFO - DAG(s) 'dynamic_scrapy_spiders' retrieved from /opt/airflow/dags/scrapy_crawler_dag.py
+[2025-08-31T15:25:07.498+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:25:07.498+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-08-31T15:25:07.513+0000] {logging_mixin.py:188} INFO - [2025-08-31T15:25:07.512+0000] {dag.py:3947} INFO - Setting next_dagrun for dynamic_scrapy_spiders to None, run_after=None
+[2025-08-31T15:25:07.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/scrapy_crawler_dag.py took 0.157 seconds

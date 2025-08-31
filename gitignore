@@ -1,0 +1,50 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg
+*.egg-info/
+*.log
+
+# Virtual environment
+.env
+.venv/
+env/
+ENV/
+venv/
+*.sqlite3
+
+# Airflow
+airflow_home/
+logs/
+*.pid
+*.db
+
+# Scrapy
+.scrapy/
+*.jl
+*.csv
+*.json
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+# Local volumes
+postgres_data/
+mongo_data/
+neo4j_data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

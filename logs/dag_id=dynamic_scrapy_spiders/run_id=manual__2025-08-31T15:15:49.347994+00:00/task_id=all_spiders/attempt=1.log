@@ -1,0 +1,230 @@
+[2025-08-31T15:15:53.093+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-31T15:15:53.144+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dynamic_scrapy_spiders.all_spiders manual__2025-08-31T15:15:49.347994+00:00 [queued]>
+[2025-08-31T15:15:53.165+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dynamic_scrapy_spiders.all_spiders manual__2025-08-31T15:15:49.347994+00:00 [queued]>
+[2025-08-31T15:15:53.165+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-08-31T15:15:53.196+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): all_spiders> on 2025-08-31 15:15:49.347994+00:00
+[2025-08-31T15:15:53.218+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dynamic_scrapy_spiders', 'all_spiders', 'manual__2025-08-31T15:15:49.347994+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/scrapy_crawler_dag.py', '--cfg-path', '/tmp/tmpn95kkzef']
+[2025-08-31T15:15:53.220+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=179) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-08-31T15:15:53.222+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask all_spiders
+[2025-08-31T15:15:53.222+0000] {standard_task_runner.py:64} INFO - Started process 180 to run task
+[2025-08-31T15:15:53.297+0000] {task_command.py:426} INFO - Running <TaskInstance: dynamic_scrapy_spiders.all_spiders manual__2025-08-31T15:15:49.347994+00:00 [running]> on host 68353a0c5ac2
+[2025-08-31T15:15:53.432+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dynamic_scrapy_spiders' AIRFLOW_CTX_TASK_ID='all_spiders' AIRFLOW_CTX_EXECUTION_DATE='2025-08-31T15:15:49.347994+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-31T15:15:49.347994+00:00'
+[2025-08-31T15:15:53.433+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-31T15:15:53.447+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-31T15:15:53.448+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n        cd /opt/***/identity-mapping/scraper &&         for spider in $(cat /opt/***/identity-mapping/spiders.txt); do\n            echo "Running spider: $spider"\n            scrapy crawl $spider || exit 1\n        done\n        ']
+[2025-08-31T15:15:53.467+0000] {subprocess.py:86} INFO - Output:
+[2025-08-31T15:15:53.475+0000] {subprocess.py:93} INFO - Running spider: npiregistry
+[2025-08-31T15:15:54.575+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: scraper)
+[2025-08-31T15:15:54.583+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.utils.log] INFO: Versions:
+[2025-08-31T15:15:54.583+0000] {subprocess.py:93} INFO - {'lxml': '5.2.1',
+[2025-08-31T15:15:54.584+0000] {subprocess.py:93} INFO -  'libxml2': '2.12.6',
+[2025-08-31T15:15:54.584+0000] {subprocess.py:93} INFO -  'cssselect': '1.3.0',
+[2025-08-31T15:15:54.584+0000] {subprocess.py:93} INFO -  'parsel': '1.10.0',
+[2025-08-31T15:15:54.585+0000] {subprocess.py:93} INFO -  'w3lib': '2.3.1',
+[2025-08-31T15:15:54.585+0000] {subprocess.py:93} INFO -  'Twisted': '25.5.0',
+[2025-08-31T15:15:54.585+0000] {subprocess.py:93} INFO -  'Python': '3.12.3 (main, Apr 24 2024, 11:28:46) [GCC 12.2.0]',
+[2025-08-31T15:15:54.585+0000] {subprocess.py:93} INFO -  'pyOpenSSL': '24.1.0 (OpenSSL 3.1.4 24 Oct 2023)',
+[2025-08-31T15:15:54.585+0000] {subprocess.py:93} INFO -  'cryptography': '41.0.7',
+[2025-08-31T15:15:54.586+0000] {subprocess.py:93} INFO -  'Platform': 'Linux-6.14.0-29-generic-x86_64-with-glibc2.36'}
+[2025-08-31T15:15:54.586+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.addons] INFO: Enabled addons:
+[2025-08-31T15:15:54.587+0000] {subprocess.py:93} INFO - []
+[2025-08-31T15:15:54.592+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [py.warnings] WARNING: /home/***/.local/lib/python3.12/site-packages/scrapy/utils/request.py:120: ScrapyDeprecationWarning: 'REQUEST_FINGERPRINTER_IMPLEMENTATION' is a deprecated setting.
+[2025-08-31T15:15:54.593+0000] {subprocess.py:93} INFO - It will be removed in a future version of Scrapy.
+[2025-08-31T15:15:54.593+0000] {subprocess.py:93} INFO -   return cls(crawler)
+[2025-08-31T15:15:54.594+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:15:54.594+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [asyncio] DEBUG: Using selector: EpollSelector
+[2025-08-31T15:15:54.594+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+[2025-08-31T15:15:54.594+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+[2025-08-31T15:15:54.600+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.extensions.telnet] INFO: Telnet Password: d4af8b8a63481628
+[2025-08-31T15:15:54.659+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.middleware] INFO: Enabled extensions:
+[2025-08-31T15:15:54.660+0000] {subprocess.py:93} INFO - ['scrapy.extensions.corestats.CoreStats',
+[2025-08-31T15:15:54.660+0000] {subprocess.py:93} INFO -  'scrapy.extensions.telnet.TelnetConsole',
+[2025-08-31T15:15:54.660+0000] {subprocess.py:93} INFO -  'scrapy.extensions.memusage.MemoryUsage',
+[2025-08-31T15:15:54.660+0000] {subprocess.py:93} INFO -  'scrapy.extensions.logstats.LogStats']
+[2025-08-31T15:15:54.661+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.crawler] INFO: Overridden settings:
+[2025-08-31T15:15:54.661+0000] {subprocess.py:93} INFO - {'BOT_NAME': 'scraper',
+[2025-08-31T15:15:54.661+0000] {subprocess.py:93} INFO -  'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+[2025-08-31T15:15:54.661+0000] {subprocess.py:93} INFO -  'DOWNLOAD_DELAY': 1,
+[2025-08-31T15:15:54.662+0000] {subprocess.py:93} INFO -  'FEED_EXPORT_ENCODING': 'utf-8',
+[2025-08-31T15:15:54.662+0000] {subprocess.py:93} INFO -  'NEWSPIDER_MODULE': 'scraper.spiders',
+[2025-08-31T15:15:54.662+0000] {subprocess.py:93} INFO -  'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+[2025-08-31T15:15:54.662+0000] {subprocess.py:93} INFO -  'SPIDER_MODULES': ['scraper.spiders']}
+[2025-08-31T15:15:54.878+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+[2025-08-31T15:15:54.878+0000] {subprocess.py:93} INFO - ['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+[2025-08-31T15:15:54.879+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+[2025-08-31T15:15:54.879+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+[2025-08-31T15:15:54.881+0000] {subprocess.py:93} INFO -  'scraper.middlewares.ProxyMiddleware',
+[2025-08-31T15:15:54.881+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+[2025-08-31T15:15:54.881+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+[2025-08-31T15:15:54.882+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+[2025-08-31T15:15:54.882+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+[2025-08-31T15:15:54.882+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+[2025-08-31T15:15:54.882+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+[2025-08-31T15:15:54.883+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+[2025-08-31T15:15:54.883+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+[2025-08-31T15:15:54.883+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2025-08-31T15:15:54.887+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+[2025-08-31T15:15:54.888+0000] {subprocess.py:93} INFO - ['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+[2025-08-31T15:15:54.888+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+[2025-08-31T15:15:54.888+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.referer.RefererMiddleware',
+[2025-08-31T15:15:54.889+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+[2025-08-31T15:15:54.889+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2025-08-31T15:15:57.054+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:57 [scrapy.middleware] INFO: Enabled item pipelines:
+[2025-08-31T15:15:57.055+0000] {subprocess.py:93} INFO - ['scraper.custom_pipelines.cleanup_pipeline.CleanupPipeline',
+[2025-08-31T15:15:57.055+0000] {subprocess.py:93} INFO -  'scraper.custom_pipelines.scoring_pipeline.ScoringPipeline',
+[2025-08-31T15:15:57.056+0000] {subprocess.py:93} INFO -  'scraper.pipelines.MongoPipeline']
+[2025-08-31T15:15:57.056+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:57 [scrapy.core.engine] INFO: Spider opened
+[2025-08-31T15:15:57.075+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:57 [py.warnings] WARNING: /home/***/.local/lib/python3.12/site-packages/scrapy/core/spidermw.py:433: ScrapyDeprecationWarning: scraper.spiders.npiregistry.NpiregistrySpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+[2025-08-31T15:15:57.076+0000] {subprocess.py:93} INFO -   warn(
+[2025-08-31T15:15:57.076+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:15:57.083+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:57 [neo4j.pool] DEBUG: [#0000]  _: <POOL> created, direct address IPv4Address(('neo4j', 7687))
+[2025-08-31T15:15:57.085+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2025-08-31T15:15:57.087+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:57 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[2025-08-31T15:15:57.857+0000] {subprocess.py:93} INFO - 2025-08-31 15:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://npiregistry.cms.hhs.gov/api/?number=1457074080&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1> (referer: https://npiregistry.cms.hhs.gov/provider-view/1386663896)
+[2025-08-31T15:16:02.003+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://npiregistry.cms.hhs.gov/api/?number=1073615282&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1> (referer: https://npiregistry.cms.hhs.gov/provider-view/1386663896)
+[2025-08-31T15:16:02.146+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.google.com:443
+[2025-08-31T15:16:02.362+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:02 [urllib3.connectionpool] DEBUG: https://www.google.com:443 "GET /search?q=site%3Anpiregistry.cms.hhs.gov&num=7&hl=en&start=0&safe=active HTTP/1.1" 200 None
+[2025-08-31T15:16:05.848+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j] DEBUG: [#0000]  _: <WORKSPACE> routing towards fixed database: None
+[2025-08-31T15:16:05.849+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j] DEBUG: [#0000]  _: <WORKSPACE> pinning database: None
+[2025-08-31T15:16:05.849+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.pool] DEBUG: [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+[2025-08-31T15:16:05.849+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.pool] DEBUG: [#0000]  _: <POOL> trying to hand out new connection
+[2025-08-31T15:16:05.849+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#0000]  _: <RESOLVE> in: neo4j:7687
+[2025-08-31T15:16:05.849+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#0000]  _: <RESOLVE> dns resolver out: 172.18.0.4:7687
+[2025-08-31T15:16:05.850+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#0000]  C: <OPEN> 172.18.0.4:7687
+[2025-08-31T15:16:05.850+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  C: <MAGIC> 0x6060B017
+[2025-08-31T15:16:05.850+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+[2025-08-31T15:16:05.936+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+[2025-08-31T15:16:05.936+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  C: <HANDSHAKE> 0x00000805 0x00
+[2025-08-31T15:16:05.937+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  C: HELLO {'user_agent': 'neo4j-python/5.28.2 Python/3.12.3-final-0 (linux)', 'bolt_agent': {'product': 'neo4j-python/5.28.2', 'platform': 'Linux 6.14.0-29-generic; x86_64', 'language': 'Python/3.12.3-final-0', 'language_details': 'CPython; 3.12.3-final-0 (main, Apr 24 2024 11:28:46) [GCC 12.2.0]'}}
+[2025-08-31T15:16:05.937+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+[2025-08-31T15:16:05.938+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+[2025-08-31T15:16:05.938+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> client state: AUTHENTICATION > READY
+[2025-08-31T15:16:05.987+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'server': 'Neo4j/5.26.11', 'protocol_version': '5.8', 'connection_id': 'bolt-0', 'hints': {'connection.recv_timeout_seconds': 120, 'ssr.enabled': True}}
+[2025-08-31T15:16:05.988+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:05 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+[2025-08-31T15:16:06.015+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:06 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'advertised_address': 'localhost:7687'}
+[2025-08-31T15:16:06.015+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:06 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> server state: AUTHENTICATION > READY
+[2025-08-31T15:16:06.015+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:06 [neo4j.io] DEBUG: [#C00E]  C: BEGIN {}
+[2025-08-31T15:16:06.015+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:06 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> client state: READY > TX_READY_OR_TX_STREAMING
+[2025-08-31T15:16:06.054+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:06 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'db': 'neo4j'}
+[2025-08-31T15:16:06.055+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:06 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> server state: READY > TX_READY_OR_TX_STREAMING
+[2025-08-31T15:16:06.055+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:06 [neo4j.io] DEBUG: [#C00E]  C: RUN '\n                    MERGE (p:Profile {phone: $phone})\n                    SET p.name = $name,\n                        p.profile_id = $profile_id,\n                        p.specialities = $specialities,\n                        p.source_name = $source_name,\n                        p.url = $url,\n                        p.updated_at = datetime()\n                    ' {'phone': '2488495862', 'name': 'VIJAY K MITTAL', 'profile_id': '45598', 'specialities': ['Surgery'], 'source_name': 'npiregistry.cms.hhs.gov', 'url': 'https://npiregistry.cms.hhs.gov/api/?number=1073615282&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1'} {}
+[2025-08-31T15:16:06.055+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:06 [neo4j.io] DEBUG: [#C00E]  C: PULL {'n': 1000}
+[2025-08-31T15:16:07.811+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'t_first': 1743, 'fields': [], 'qid': 0}
+[2025-08-31T15:16:07.815+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'stats': {'contains-updates': True, 'labels-added': 1, 'nodes-created': 1, 'properties-set': 7}, 'statuses': [{'gql_status': '00001', 'status_description': 'note: successful completion - omitted result'}], 'type': 'w', 't_last': 0, 'db': 'neo4j'}
+[2025-08-31T15:16:07.815+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [neo4j.io] DEBUG: [#C00E]  C: COMMIT
+[2025-08-31T15:16:07.815+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> client state: TX_READY_OR_TX_STREAMING > READY
+[2025-08-31T15:16:07.828+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'bookmark': 'FB:kcwQ5oPfn/IUQES+nfD7agvMIgyQ'}
+[2025-08-31T15:16:07.830+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> server state: TX_READY_OR_TX_STREAMING > READY
+[2025-08-31T15:16:07.830+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [neo4j.pool] DEBUG: [#C00E]  _: <POOL> released bolt-0
+[2025-08-31T15:16:07.830+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://npiregistry.cms.hhs.gov/api/?number=1073615282&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1>
+[2025-08-31T15:16:07.830+0000] {subprocess.py:93} INFO - {'_id': ObjectId('68b46732847ccf878a9af02e'),
+[2025-08-31T15:16:07.831+0000] {subprocess.py:93} INFO -  'created_at': datetime.datetime(2025, 8, 31, 15, 16, 5, 831253),
+[2025-08-31T15:16:07.831+0000] {subprocess.py:93} INFO -  'flag': None,
+[2025-08-31T15:16:07.831+0000] {subprocess.py:93} INFO -  'flag_profile_id': None,
+[2025-08-31T15:16:07.831+0000] {subprocess.py:93} INFO -  'name': 'VIJAY K MITTAL',
+[2025-08-31T15:16:07.831+0000] {subprocess.py:93} INFO -  'phone': '2488495862',
+[2025-08-31T15:16:07.831+0000] {subprocess.py:93} INFO -  'profile_id': '45598',
+[2025-08-31T15:16:07.831+0000] {subprocess.py:93} INFO -  'source_name': 'npiregistry.cms.hhs.gov',
+[2025-08-31T15:16:07.831+0000] {subprocess.py:93} INFO -  'specialities': ['Surgery'],
+[2025-08-31T15:16:07.831+0000] {subprocess.py:93} INFO -  'trust_score': 88.0,
+[2025-08-31T15:16:07.832+0000] {subprocess.py:93} INFO -  'updated_at': None,
+[2025-08-31T15:16:07.832+0000] {subprocess.py:93} INFO -  'url': 'https://npiregistry.cms.hhs.gov/api/?number=1073615282&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1'}
+[2025-08-31T15:16:07.832+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://npiregistry.cms.hhs.gov/api/?number=1538574736&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1> (referer: https://npiregistry.cms.hhs.gov/provider-view/1386663896)
+[2025-08-31T15:16:07.940+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.google.com:443
+[2025-08-31T15:16:08.265+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:08 [urllib3.connectionpool] DEBUG: https://www.google.com:443 "GET /search?q=site%3Anpiregistry.cms.hhs.gov&num=7&hl=en&start=0&safe=active HTTP/1.1" 200 None
+[2025-08-31T15:16:16.315+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j] DEBUG: [#0000]  _: <WORKSPACE> routing towards fixed database: None
+[2025-08-31T15:16:16.315+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j] DEBUG: [#0000]  _: <WORKSPACE> pinning database: None
+[2025-08-31T15:16:16.315+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.pool] DEBUG: [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+[2025-08-31T15:16:16.316+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.pool] DEBUG: [#C00E]  _: <POOL> picked existing connection bolt-0
+[2025-08-31T15:16:16.316+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.pool] DEBUG: [#C00E]  _: <POOL> checked re_auth auth=None updated=False force=False
+[2025-08-31T15:16:16.316+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.pool] DEBUG: [#C00E]  _: <POOL> handing out existing connection
+[2025-08-31T15:16:16.316+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  C: BEGIN {}
+[2025-08-31T15:16:16.316+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> client state: READY > TX_READY_OR_TX_STREAMING
+[2025-08-31T15:16:16.321+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'db': 'neo4j'}
+[2025-08-31T15:16:16.321+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> server state: READY > TX_READY_OR_TX_STREAMING
+[2025-08-31T15:16:16.322+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  C: RUN '\n                    MERGE (p:Profile {phone: $phone})\n                    SET p.name = $name,\n                        p.profile_id = $profile_id,\n                        p.specialities = $specialities,\n                        p.source_name = $source_name,\n                        p.url = $url,\n                        p.updated_at = datetime()\n                    ' {'phone': '9095584884', 'name': 'SAMIRA RAHMANIAN', 'profile_id': '98477', 'specialities': ['Internal Medicine'], 'source_name': 'npiregistry.cms.hhs.gov', 'url': 'https://npiregistry.cms.hhs.gov/api/?number=1538574736&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1'} {}
+[2025-08-31T15:16:16.322+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  C: PULL {'n': 1000}
+[2025-08-31T15:16:16.345+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'t_first': 21, 'fields': [], 'qid': 0}
+[2025-08-31T15:16:16.346+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'stats': {'contains-updates': True, 'labels-added': 1, 'nodes-created': 1, 'properties-set': 7}, 'statuses': [{'gql_status': '00001', 'status_description': 'note: successful completion - omitted result'}], 'type': 'w', 't_last': 0, 'db': 'neo4j'}
+[2025-08-31T15:16:16.347+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  C: COMMIT
+[2025-08-31T15:16:16.347+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> client state: TX_READY_OR_TX_STREAMING > READY
+[2025-08-31T15:16:16.357+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  S: SUCCESS {'bookmark': 'FB:kcwQ5oPfn/IUQES+nfD7agvMIg2Q'}
+[2025-08-31T15:16:16.358+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  _: <CONNECTION> server state: TX_READY_OR_TX_STREAMING > READY
+[2025-08-31T15:16:16.358+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.pool] DEBUG: [#C00E]  _: <POOL> released bolt-0
+[2025-08-31T15:16:16.358+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://npiregistry.cms.hhs.gov/api/?number=1538574736&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1>
+[2025-08-31T15:16:16.358+0000] {subprocess.py:93} INFO - {'_id': ObjectId('68b46737847ccf878a9af02f'),
+[2025-08-31T15:16:16.358+0000] {subprocess.py:93} INFO -  'created_at': datetime.datetime(2025, 8, 31, 15, 16, 16, 313701),
+[2025-08-31T15:16:16.358+0000] {subprocess.py:93} INFO -  'flag': None,
+[2025-08-31T15:16:16.359+0000] {subprocess.py:93} INFO -  'flag_profile_id': None,
+[2025-08-31T15:16:16.359+0000] {subprocess.py:93} INFO -  'name': 'SAMIRA RAHMANIAN',
+[2025-08-31T15:16:16.359+0000] {subprocess.py:93} INFO -  'phone': '9095584884',
+[2025-08-31T15:16:16.359+0000] {subprocess.py:93} INFO -  'profile_id': '98477',
+[2025-08-31T15:16:16.359+0000] {subprocess.py:93} INFO -  'source_name': 'npiregistry.cms.hhs.gov',
+[2025-08-31T15:16:16.359+0000] {subprocess.py:93} INFO -  'specialities': ['Internal Medicine'],
+[2025-08-31T15:16:16.359+0000] {subprocess.py:93} INFO -  'trust_score': 88.0,
+[2025-08-31T15:16:16.360+0000] {subprocess.py:93} INFO -  'updated_at': None,
+[2025-08-31T15:16:16.360+0000] {subprocess.py:93} INFO -  'url': 'https://npiregistry.cms.hhs.gov/api/?number=1538574736&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1'}
+[2025-08-31T15:16:16.360+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [scrapy.core.engine] INFO: Closing spider (finished)
+[2025-08-31T15:16:16.361+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.pool] DEBUG: [#0000]  _: <POOL> close
+[2025-08-31T15:16:16.361+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  C: GOODBYE
+[2025-08-31T15:16:16.361+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [neo4j.io] DEBUG: [#C00E]  C: <CLOSE>
+[2025-08-31T15:16:16.362+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+[2025-08-31T15:16:16.362+0000] {subprocess.py:93} INFO - {'downloader/request_bytes': 2607,
+[2025-08-31T15:16:16.363+0000] {subprocess.py:93} INFO -  'downloader/request_count': 3,
+[2025-08-31T15:16:16.363+0000] {subprocess.py:93} INFO -  'downloader/request_method_count/GET': 3,
+[2025-08-31T15:16:16.363+0000] {subprocess.py:93} INFO -  'downloader/response_bytes': 5011,
+[2025-08-31T15:16:16.364+0000] {subprocess.py:93} INFO -  'downloader/response_count': 3,
+[2025-08-31T15:16:16.364+0000] {subprocess.py:93} INFO -  'downloader/response_status_count/200': 3,
+[2025-08-31T15:16:16.364+0000] {subprocess.py:93} INFO -  'elapsed_time_seconds': 19.276491,
+[2025-08-31T15:16:16.364+0000] {subprocess.py:93} INFO -  'finish_reason': 'finished',
+[2025-08-31T15:16:16.364+0000] {subprocess.py:93} INFO -  'finish_time': datetime.datetime(2025, 8, 31, 15, 16, 16, 360953, tzinfo=datetime.timezone.utc),
+[2025-08-31T15:16:16.364+0000] {subprocess.py:93} INFO -  'item_scraped_count': 2,
+[2025-08-31T15:16:16.364+0000] {subprocess.py:93} INFO -  'items_per_minute': 6.315789473684211,
+[2025-08-31T15:16:16.365+0000] {subprocess.py:93} INFO -  'log_count/DEBUG': 67,
+[2025-08-31T15:16:16.365+0000] {subprocess.py:93} INFO -  'log_count/INFO': 10,
+[2025-08-31T15:16:16.365+0000] {subprocess.py:93} INFO -  'log_count/WARNING': 2,
+[2025-08-31T15:16:16.365+0000] {subprocess.py:93} INFO -  'memusage/max': 200437760,
+[2025-08-31T15:16:16.365+0000] {subprocess.py:93} INFO -  'memusage/startup': 200437760,
+[2025-08-31T15:16:16.365+0000] {subprocess.py:93} INFO -  'response_received_count': 3,
+[2025-08-31T15:16:16.365+0000] {subprocess.py:93} INFO -  'responses_per_minute': 9.473684210526317,
+[2025-08-31T15:16:16.365+0000] {subprocess.py:93} INFO -  'scheduler/dequeued': 3,
+[2025-08-31T15:16:16.366+0000] {subprocess.py:93} INFO -  'scheduler/dequeued/memory': 3,
+[2025-08-31T15:16:16.367+0000] {subprocess.py:93} INFO -  'scheduler/enqueued': 3,
+[2025-08-31T15:16:16.367+0000] {subprocess.py:93} INFO -  'scheduler/enqueued/memory': 3,
+[2025-08-31T15:16:16.367+0000] {subprocess.py:93} INFO -  'start_time': datetime.datetime(2025, 8, 31, 15, 15, 57, 84462, tzinfo=datetime.timezone.utc)}
+[2025-08-31T15:16:16.367+0000] {subprocess.py:93} INFO - 2025-08-31 15:16:16 [scrapy.core.engine] INFO: Spider closed (finished)
+[2025-08-31T15:16:16.488+0000] {subprocess.py:93} INFO - [+] spider running Normal mode [+]
+[2025-08-31T15:16:16.489+0000] {subprocess.py:93} INFO - [36m
+[2025-08-31T15:16:16.489+0000] {subprocess.py:93} INFO - =============== Processed Profile : 1 ===============
+[2025-08-31T15:16:16.489+0000] {subprocess.py:93} INFO - [32m=========== New Profile Id = 83351 ========
+[2025-08-31T15:16:16.489+0000] {subprocess.py:93} INFO - [33mCreated At: 2025-08-31 15:16:02
+[2025-08-31T15:16:16.490+0000] {subprocess.py:93} INFO - [0m
+[2025-08-31T15:16:16.490+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:16:16.490+0000] {subprocess.py:93} INFO - =============== Trust Score Calculation ===============
+[2025-08-31T15:16:16.490+0000] {subprocess.py:93} INFO - Domain: npiregistry.cms.hhs.gov
+[2025-08-31T15:16:16.490+0000] {subprocess.py:93} INFO -  Google Reputation Score   : 100
+[2025-08-31T15:16:16.490+0000] {subprocess.py:93} INFO -  Domain Age Score          : 40
+[2025-08-31T15:16:16.491+0000] {subprocess.py:93} INFO -  Data Completeness Score   : 100
+[2025-08-31T15:16:16.491+0000] {subprocess.py:93} INFO -  >>> Final Trust Score     : 88.0
+[2025-08-31T15:16:16.491+0000] {subprocess.py:93} INFO - =======================================================
+[2025-08-31T15:16:16.491+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:16:16.491+0000] {subprocess.py:93} INFO - [36m
+[2025-08-31T15:16:16.492+0000] {subprocess.py:93} INFO - =============== Processed Profile : 2 ===============
+[2025-08-31T15:16:16.492+0000] {subprocess.py:93} INFO - [32m=========== New Profile Id = 91774 ========
+[2025-08-31T15:16:16.492+0000] {subprocess.py:93} INFO - [33mCreated At: 2025-08-31 15:16:07
+[2025-08-31T15:16:16.492+0000] {subprocess.py:93} INFO - [0m
+[2025-08-31T15:16:16.492+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:16:16.492+0000] {subprocess.py:93} INFO - =============== Trust Score Calculation ===============
+[2025-08-31T15:16:16.493+0000] {subprocess.py:93} INFO - Domain: npiregistry.cms.hhs.gov
+[2025-08-31T15:16:16.493+0000] {subprocess.py:93} INFO -  Google Reputation Score   : 100
+[2025-08-31T15:16:16.493+0000] {subprocess.py:93} INFO -  Domain Age Score          : 40
+[2025-08-31T15:16:16.493+0000] {subprocess.py:93} INFO -  Data Completeness Score   : 100
+[2025-08-31T15:16:16.493+0000] {subprocess.py:93} INFO -  >>> Final Trust Score     : 88.0
+[2025-08-31T15:16:16.493+0000] {subprocess.py:93} INFO - =======================================================
+[2025-08-31T15:16:16.493+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:16:16.930+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-08-31T15:16:16.931+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-31T15:16:16.964+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dynamic_scrapy_spiders, task_id=all_spiders, run_id=manual__2025-08-31T15:15:49.347994+00:00, execution_date=20250831T151549, start_date=20250831T151553, end_date=20250831T151616
+[2025-08-31T15:16:16.995+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-08-31T15:16:17.016+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-31T15:16:17.018+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

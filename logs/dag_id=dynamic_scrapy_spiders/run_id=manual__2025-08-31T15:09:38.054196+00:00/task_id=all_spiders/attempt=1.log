@@ -1,0 +1,306 @@
+[2025-08-31T15:09:42.672+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-31T15:09:42.735+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dynamic_scrapy_spiders.all_spiders manual__2025-08-31T15:09:38.054196+00:00 [queued]>
+[2025-08-31T15:09:42.743+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dynamic_scrapy_spiders.all_spiders manual__2025-08-31T15:09:38.054196+00:00 [queued]>
+[2025-08-31T15:09:42.744+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-08-31T15:09:42.758+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): all_spiders> on 2025-08-31 15:09:38.054196+00:00
+[2025-08-31T15:09:42.768+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dynamic_scrapy_spiders', 'all_spiders', 'manual__2025-08-31T15:09:38.054196+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/scrapy_crawler_dag.py', '--cfg-path', '/tmp/tmp46yftoqp']
+[2025-08-31T15:09:42.770+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask all_spiders
+[2025-08-31T15:09:42.771+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=179) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-08-31T15:09:42.771+0000] {standard_task_runner.py:64} INFO - Started process 180 to run task
+[2025-08-31T15:09:42.831+0000] {task_command.py:426} INFO - Running <TaskInstance: dynamic_scrapy_spiders.all_spiders manual__2025-08-31T15:09:38.054196+00:00 [running]> on host f1d4767aae07
+[2025-08-31T15:09:42.943+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dynamic_scrapy_spiders' AIRFLOW_CTX_TASK_ID='all_spiders' AIRFLOW_CTX_EXECUTION_DATE='2025-08-31T15:09:38.054196+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-31T15:09:38.054196+00:00'
+[2025-08-31T15:09:42.944+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-31T15:09:42.961+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-31T15:09:42.962+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n        cd /opt/***/identity-mapping/scraper &&         for spider in $(cat /opt/***/identity-mapping/spiders.txt); do\n            echo "Running spider: $spider"\n            scrapy crawl $spider || exit 1\n        done\n        ']
+[2025-08-31T15:09:42.982+0000] {subprocess.py:86} INFO - Output:
+[2025-08-31T15:09:42.989+0000] {subprocess.py:93} INFO - Running spider: npiregistry
+[2025-08-31T15:09:44.155+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: scraper)
+[2025-08-31T15:09:44.160+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.utils.log] INFO: Versions:
+[2025-08-31T15:09:44.161+0000] {subprocess.py:93} INFO - {'lxml': '5.2.1',
+[2025-08-31T15:09:44.162+0000] {subprocess.py:93} INFO -  'libxml2': '2.12.6',
+[2025-08-31T15:09:44.162+0000] {subprocess.py:93} INFO -  'cssselect': '1.3.0',
+[2025-08-31T15:09:44.162+0000] {subprocess.py:93} INFO -  'parsel': '1.10.0',
+[2025-08-31T15:09:44.162+0000] {subprocess.py:93} INFO -  'w3lib': '2.3.1',
+[2025-08-31T15:09:44.163+0000] {subprocess.py:93} INFO -  'Twisted': '25.5.0',
+[2025-08-31T15:09:44.163+0000] {subprocess.py:93} INFO -  'Python': '3.12.3 (main, Apr 24 2024, 11:28:46) [GCC 12.2.0]',
+[2025-08-31T15:09:44.163+0000] {subprocess.py:93} INFO -  'pyOpenSSL': '24.1.0 (OpenSSL 3.1.4 24 Oct 2023)',
+[2025-08-31T15:09:44.163+0000] {subprocess.py:93} INFO -  'cryptography': '41.0.7',
+[2025-08-31T15:09:44.163+0000] {subprocess.py:93} INFO -  'Platform': 'Linux-6.14.0-29-generic-x86_64-with-glibc2.36'}
+[2025-08-31T15:09:44.163+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.addons] INFO: Enabled addons:
+[2025-08-31T15:09:44.163+0000] {subprocess.py:93} INFO - []
+[2025-08-31T15:09:44.168+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [py.warnings] WARNING: /home/***/.local/lib/python3.12/site-packages/scrapy/utils/request.py:120: ScrapyDeprecationWarning: 'REQUEST_FINGERPRINTER_IMPLEMENTATION' is a deprecated setting.
+[2025-08-31T15:09:44.169+0000] {subprocess.py:93} INFO - It will be removed in a future version of Scrapy.
+[2025-08-31T15:09:44.169+0000] {subprocess.py:93} INFO -   return cls(crawler)
+[2025-08-31T15:09:44.169+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:09:44.169+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [asyncio] DEBUG: Using selector: EpollSelector
+[2025-08-31T15:09:44.169+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+[2025-08-31T15:09:44.169+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+[2025-08-31T15:09:44.174+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.extensions.telnet] INFO: Telnet Password: 0a66547f9cd1f4c3
+[2025-08-31T15:09:44.220+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.middleware] INFO: Enabled extensions:
+[2025-08-31T15:09:44.220+0000] {subprocess.py:93} INFO - ['scrapy.extensions.corestats.CoreStats',
+[2025-08-31T15:09:44.220+0000] {subprocess.py:93} INFO -  'scrapy.extensions.telnet.TelnetConsole',
+[2025-08-31T15:09:44.221+0000] {subprocess.py:93} INFO -  'scrapy.extensions.memusage.MemoryUsage',
+[2025-08-31T15:09:44.221+0000] {subprocess.py:93} INFO -  'scrapy.extensions.logstats.LogStats']
+[2025-08-31T15:09:44.221+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.crawler] INFO: Overridden settings:
+[2025-08-31T15:09:44.221+0000] {subprocess.py:93} INFO - {'BOT_NAME': 'scraper',
+[2025-08-31T15:09:44.221+0000] {subprocess.py:93} INFO -  'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+[2025-08-31T15:09:44.221+0000] {subprocess.py:93} INFO -  'DOWNLOAD_DELAY': 1,
+[2025-08-31T15:09:44.222+0000] {subprocess.py:93} INFO -  'FEED_EXPORT_ENCODING': 'utf-8',
+[2025-08-31T15:09:44.222+0000] {subprocess.py:93} INFO -  'NEWSPIDER_MODULE': 'scraper.spiders',
+[2025-08-31T15:09:44.222+0000] {subprocess.py:93} INFO -  'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+[2025-08-31T15:09:44.222+0000] {subprocess.py:93} INFO -  'SPIDER_MODULES': ['scraper.spiders']}
+[2025-08-31T15:09:44.446+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+[2025-08-31T15:09:44.447+0000] {subprocess.py:93} INFO - ['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+[2025-08-31T15:09:44.447+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+[2025-08-31T15:09:44.447+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+[2025-08-31T15:09:44.447+0000] {subprocess.py:93} INFO -  'scraper.middlewares.ProxyMiddleware',
+[2025-08-31T15:09:44.448+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+[2025-08-31T15:09:44.448+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+[2025-08-31T15:09:44.448+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+[2025-08-31T15:09:44.448+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+[2025-08-31T15:09:44.448+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+[2025-08-31T15:09:44.448+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+[2025-08-31T15:09:44.448+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+[2025-08-31T15:09:44.448+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+[2025-08-31T15:09:44.449+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2025-08-31T15:09:44.455+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+[2025-08-31T15:09:44.455+0000] {subprocess.py:93} INFO - ['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+[2025-08-31T15:09:44.455+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+[2025-08-31T15:09:44.455+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.referer.RefererMiddleware',
+[2025-08-31T15:09:44.455+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+[2025-08-31T15:09:44.455+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2025-08-31T15:09:46.733+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:46 [scrapy.middleware] INFO: Enabled item pipelines:
+[2025-08-31T15:09:46.733+0000] {subprocess.py:93} INFO - ['scraper.custom_pipelines.cleanup_pipeline.CleanupPipeline',
+[2025-08-31T15:09:46.733+0000] {subprocess.py:93} INFO -  'scraper.custom_pipelines.scoring_pipeline.ScoringPipeline',
+[2025-08-31T15:09:46.733+0000] {subprocess.py:93} INFO -  'scraper.pipelines.MongoPipeline']
+[2025-08-31T15:09:46.734+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:46 [scrapy.core.engine] INFO: Spider opened
+[2025-08-31T15:09:46.752+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:46 [py.warnings] WARNING: /home/***/.local/lib/python3.12/site-packages/scrapy/core/spidermw.py:433: ScrapyDeprecationWarning: scraper.spiders.npiregistry.NpiregistrySpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+[2025-08-31T15:09:46.753+0000] {subprocess.py:93} INFO -   warn(
+[2025-08-31T15:09:46.753+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:09:46.760+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:46 [neo4j.pool] DEBUG: [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+[2025-08-31T15:09:46.761+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2025-08-31T15:09:46.762+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:46 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[2025-08-31T15:09:48.153+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://npiregistry.cms.hhs.gov/api/?number=1457074080&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1> (referer: https://npiregistry.cms.hhs.gov/provider-view/1386663896)
+[2025-08-31T15:09:50.755+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://npiregistry.cms.hhs.gov/api/?number=1073615282&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1> (referer: https://npiregistry.cms.hhs.gov/provider-view/1386663896)
+[2025-08-31T15:09:50.893+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.google.com:443
+[2025-08-31T15:09:51.102+0000] {subprocess.py:93} INFO - 2025-08-31 15:09:51 [urllib3.connectionpool] DEBUG: https://www.google.com:443 "GET /search?q=site%3Anpiregistry.cms.hhs.gov&num=7&hl=en&start=0&safe=active HTTP/1.1" 200 None
+[2025-08-31T15:10:23.409+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:23 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('68b465be3762579d0027d540'),
+[2025-08-31T15:10:23.409+0000] {subprocess.py:93} INFO -  'created_at': '2025-08-31 15:09:50',
+[2025-08-31T15:10:23.410+0000] {subprocess.py:93} INFO -  'flag': None,
+[2025-08-31T15:10:23.410+0000] {subprocess.py:93} INFO -  'flag_profile_id': None,
+[2025-08-31T15:10:23.410+0000] {subprocess.py:93} INFO -  'name': 'VIJAY K MITTAL',
+[2025-08-31T15:10:23.411+0000] {subprocess.py:93} INFO -  'phone': '2488495862',
+[2025-08-31T15:10:23.411+0000] {subprocess.py:93} INFO -  'profile_id': '35623',
+[2025-08-31T15:10:23.411+0000] {subprocess.py:93} INFO -  'source_name': 'npiregistry.cms.hhs.gov',
+[2025-08-31T15:10:23.411+0000] {subprocess.py:93} INFO -  'specialities': ['Surgery'],
+[2025-08-31T15:10:23.411+0000] {subprocess.py:93} INFO -  'trust_score': 88.0,
+[2025-08-31T15:10:23.412+0000] {subprocess.py:93} INFO -  'updated_at': None,
+[2025-08-31T15:10:23.412+0000] {subprocess.py:93} INFO -  'url': 'https://npiregistry.cms.hhs.gov/api/?number=1073615282&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1'}
+[2025-08-31T15:10:23.412+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-08-31T15:10:23.412+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/scrapy/core/scraper.py", line 387, in start_itemproc
+[2025-08-31T15:10:23.413+0000] {subprocess.py:93} INFO -     output = await maybe_deferred_to_future(
+[2025-08-31T15:10:23.413+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.413+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/twisted/internet/defer.py", line 1092, in _runCallbacks
+[2025-08-31T15:10:23.413+0000] {subprocess.py:93} INFO -     current.result = callback(  # type: ignore[misc]
+[2025-08-31T15:10:23.413+0000] {subprocess.py:93} INFO -                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.414+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/scrapy/utils/defer.py", line 407, in f
+[2025-08-31T15:10:23.414+0000] {subprocess.py:93} INFO -     return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+[2025-08-31T15:10:23.414+0000] {subprocess.py:93} INFO -                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.414+0000] {subprocess.py:93} INFO -   File "/opt/***/identity-mapping/scraper/scraper/pipelines.py", line 67, in process_item
+[2025-08-31T15:10:23.414+0000] {subprocess.py:93} INFO -     existing = self.profiles.find_one({"phone": phone}) if phone else None
+[2025-08-31T15:10:23.414+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.415+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+[2025-08-31T15:10:23.415+0000] {subprocess.py:93} INFO -     for result in cursor.limit(-1):
+[2025-08-31T15:10:23.415+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+[2025-08-31T15:10:23.415+0000] {subprocess.py:93} INFO -     return self.next()
+[2025-08-31T15:10:23.415+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^
+[2025-08-31T15:10:23.416+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+[2025-08-31T15:10:23.416+0000] {subprocess.py:93} INFO -     if len(self._data) or self._refresh():
+[2025-08-31T15:10:23.416+0000] {subprocess.py:93} INFO -                           ^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.416+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+[2025-08-31T15:10:23.416+0000] {subprocess.py:93} INFO -     self._send_message(q)
+[2025-08-31T15:10:23.416+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+[2025-08-31T15:10:23.416+0000] {subprocess.py:93} INFO -     response = client._run_operation(
+[2025-08-31T15:10:23.417+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.417+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+[2025-08-31T15:10:23.417+0000] {subprocess.py:93} INFO -     return func(self, *args, **kwargs)
+[2025-08-31T15:10:23.417+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.417+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+[2025-08-31T15:10:23.417+0000] {subprocess.py:93} INFO -     return self._retryable_read(
+[2025-08-31T15:10:23.417+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.418+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+[2025-08-31T15:10:23.418+0000] {subprocess.py:93} INFO -     return self._retry_internal(
+[2025-08-31T15:10:23.418+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.418+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+[2025-08-31T15:10:23.418+0000] {subprocess.py:93} INFO -     return func(self, *args, **kwargs)
+[2025-08-31T15:10:23.418+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.418+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+[2025-08-31T15:10:23.418+0000] {subprocess.py:93} INFO -     ).run()
+[2025-08-31T15:10:23.419+0000] {subprocess.py:93} INFO -       ^^^^^
+[2025-08-31T15:10:23.419+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+[2025-08-31T15:10:23.419+0000] {subprocess.py:93} INFO -     return self._read() if self._is_read else self._write()
+[2025-08-31T15:10:23.419+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^
+[2025-08-31T15:10:23.419+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+[2025-08-31T15:10:23.419+0000] {subprocess.py:93} INFO -     self._server = self._get_server()
+[2025-08-31T15:10:23.419+0000] {subprocess.py:93} INFO -                    ^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.420+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+[2025-08-31T15:10:23.420+0000] {subprocess.py:93} INFO -     return self._client._select_server(
+[2025-08-31T15:10:23.420+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.420+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+[2025-08-31T15:10:23.420+0000] {subprocess.py:93} INFO -     server = topology.select_server(
+[2025-08-31T15:10:23.420+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.420+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+[2025-08-31T15:10:23.421+0000] {subprocess.py:93} INFO -     server = self._select_server(
+[2025-08-31T15:10:23.421+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.421+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+[2025-08-31T15:10:23.421+0000] {subprocess.py:93} INFO -     servers = self.select_servers(
+[2025-08-31T15:10:23.421+0000] {subprocess.py:93} INFO -               ^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.421+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+[2025-08-31T15:10:23.421+0000] {subprocess.py:93} INFO -     server_descriptions = self._select_servers_loop(
+[2025-08-31T15:10:23.421+0000] {subprocess.py:93} INFO -                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:23.422+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+[2025-08-31T15:10:23.422+0000] {subprocess.py:93} INFO -     raise ServerSelectionTimeoutError(
+[2025-08-31T15:10:23.422+0000] {subprocess.py:93} INFO - pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b465ba3762579d0027d53f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-08-31T15:10:23.422+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://npiregistry.cms.hhs.gov/api/?number=1538574736&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1> (referer: https://npiregistry.cms.hhs.gov/provider-view/1386663896)
+[2025-08-31T15:10:23.520+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.google.com:443
+[2025-08-31T15:10:23.708+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:23 [urllib3.connectionpool] DEBUG: https://www.google.com:443 "GET /search?q=site%3Anpiregistry.cms.hhs.gov&num=7&hl=en&start=0&safe=active HTTP/1.1" 200 None
+[2025-08-31T15:10:58.510+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:58 [scrapy.core.scraper] ERROR: Error processing {'_id': ObjectId('68b465df3762579d0027d541'),
+[2025-08-31T15:10:58.510+0000] {subprocess.py:93} INFO -  'created_at': '2025-08-31 15:10:23',
+[2025-08-31T15:10:58.510+0000] {subprocess.py:93} INFO -  'flag': None,
+[2025-08-31T15:10:58.511+0000] {subprocess.py:93} INFO -  'flag_profile_id': None,
+[2025-08-31T15:10:58.511+0000] {subprocess.py:93} INFO -  'name': 'SAMIRA RAHMANIAN',
+[2025-08-31T15:10:58.511+0000] {subprocess.py:93} INFO -  'phone': '9095584884',
+[2025-08-31T15:10:58.511+0000] {subprocess.py:93} INFO -  'profile_id': '39648',
+[2025-08-31T15:10:58.511+0000] {subprocess.py:93} INFO -  'source_name': 'npiregistry.cms.hhs.gov',
+[2025-08-31T15:10:58.511+0000] {subprocess.py:93} INFO -  'specialities': ['Internal Medicine'],
+[2025-08-31T15:10:58.511+0000] {subprocess.py:93} INFO -  'trust_score': 88.0,
+[2025-08-31T15:10:58.512+0000] {subprocess.py:93} INFO -  'updated_at': None,
+[2025-08-31T15:10:58.512+0000] {subprocess.py:93} INFO -  'url': 'https://npiregistry.cms.hhs.gov/api/?number=1538574736&enumeration_type=NPI-1&taxonomy_description=&first_name=&use_first_name_alias=&last_name=&organization_name=&address_purpose=&city=&state=&postal_code=&country_code=&limit=&skip=&version=2.1'}
+[2025-08-31T15:10:58.512+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-08-31T15:10:58.512+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/scrapy/core/scraper.py", line 387, in start_itemproc
+[2025-08-31T15:10:58.512+0000] {subprocess.py:93} INFO -     output = await maybe_deferred_to_future(
+[2025-08-31T15:10:58.512+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.512+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/twisted/internet/defer.py", line 1092, in _runCallbacks
+[2025-08-31T15:10:58.513+0000] {subprocess.py:93} INFO -     current.result = callback(  # type: ignore[misc]
+[2025-08-31T15:10:58.513+0000] {subprocess.py:93} INFO -                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.513+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/scrapy/utils/defer.py", line 407, in f
+[2025-08-31T15:10:58.513+0000] {subprocess.py:93} INFO -     return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+[2025-08-31T15:10:58.513+0000] {subprocess.py:93} INFO -                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.513+0000] {subprocess.py:93} INFO -   File "/opt/***/identity-mapping/scraper/scraper/pipelines.py", line 67, in process_item
+[2025-08-31T15:10:58.514+0000] {subprocess.py:93} INFO -     existing = self.profiles.find_one({"phone": phone}) if phone else None
+[2025-08-31T15:10:58.514+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.514+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+[2025-08-31T15:10:58.514+0000] {subprocess.py:93} INFO -     for result in cursor.limit(-1):
+[2025-08-31T15:10:58.514+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1285, in __next__
+[2025-08-31T15:10:58.514+0000] {subprocess.py:93} INFO -     return self.next()
+[2025-08-31T15:10:58.514+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^
+[2025-08-31T15:10:58.515+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1261, in next
+[2025-08-31T15:10:58.515+0000] {subprocess.py:93} INFO -     if len(self._data) or self._refresh():
+[2025-08-31T15:10:58.515+0000] {subprocess.py:93} INFO -                           ^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.515+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1209, in _refresh
+[2025-08-31T15:10:58.515+0000] {subprocess.py:93} INFO -     self._send_message(q)
+[2025-08-31T15:10:58.515+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1104, in _send_message
+[2025-08-31T15:10:58.515+0000] {subprocess.py:93} INFO -     response = client._run_operation(
+[2025-08-31T15:10:58.515+0000] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.516+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+[2025-08-31T15:10:58.516+0000] {subprocess.py:93} INFO -     return func(self, *args, **kwargs)
+[2025-08-31T15:10:58.516+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.516+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1932, in _run_operation
+[2025-08-31T15:10:58.516+0000] {subprocess.py:93} INFO -     return self._retryable_read(
+[2025-08-31T15:10:58.517+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.517+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2041, in _retryable_read
+[2025-08-31T15:10:58.517+0000] {subprocess.py:93} INFO -     return self._retry_internal(
+[2025-08-31T15:10:58.517+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.517+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+[2025-08-31T15:10:58.517+0000] {subprocess.py:93} INFO -     return func(self, *args, **kwargs)
+[2025-08-31T15:10:58.517+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.518+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2008, in _retry_internal
+[2025-08-31T15:10:58.518+0000] {subprocess.py:93} INFO -     ).run()
+[2025-08-31T15:10:58.518+0000] {subprocess.py:93} INFO -       ^^^^^
+[2025-08-31T15:10:58.518+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2745, in run
+[2025-08-31T15:10:58.518+0000] {subprocess.py:93} INFO -     return self._read() if self._is_read else self._write()
+[2025-08-31T15:10:58.518+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^
+[2025-08-31T15:10:58.518+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2890, in _read
+[2025-08-31T15:10:58.519+0000] {subprocess.py:93} INFO -     self._server = self._get_server()
+[2025-08-31T15:10:58.519+0000] {subprocess.py:93} INFO -                    ^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.519+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2838, in _get_server
+[2025-08-31T15:10:58.519+0000] {subprocess.py:93} INFO -     return self._client._select_server(
+[2025-08-31T15:10:58.519+0000] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.519+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1827, in _select_server
+[2025-08-31T15:10:58.519+0000] {subprocess.py:93} INFO -     server = topology.select_server(
+[2025-08-31T15:10:58.519+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.520+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+[2025-08-31T15:10:58.520+0000] {subprocess.py:93} INFO -     server = self._select_server(
+[2025-08-31T15:10:58.520+0000] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.520+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+[2025-08-31T15:10:58.520+0000] {subprocess.py:93} INFO -     servers = self.select_servers(
+[2025-08-31T15:10:58.520+0000] {subprocess.py:93} INFO -               ^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.520+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+[2025-08-31T15:10:58.521+0000] {subprocess.py:93} INFO -     server_descriptions = self._select_servers_loop(
+[2025-08-31T15:10:58.521+0000] {subprocess.py:93} INFO -                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-08-31T15:10:58.521+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+[2025-08-31T15:10:58.521+0000] {subprocess.py:93} INFO -     raise ServerSelectionTimeoutError(
+[2025-08-31T15:10:58.521+0000] {subprocess.py:93} INFO - pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68b465ba3762579d0027d53f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-08-31T15:10:58.521+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:58 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+[2025-08-31T15:10:58.521+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:58 [scrapy.core.engine] INFO: Closing spider (finished)
+[2025-08-31T15:10:58.522+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:58 [neo4j.pool] DEBUG: [#0000]  _: <POOL> close
+[2025-08-31T15:10:58.522+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+[2025-08-31T15:10:58.522+0000] {subprocess.py:93} INFO - {'downloader/request_bytes': 2601,
+[2025-08-31T15:10:58.522+0000] {subprocess.py:93} INFO -  'downloader/request_count': 3,
+[2025-08-31T15:10:58.523+0000] {subprocess.py:93} INFO -  'downloader/request_method_count/GET': 3,
+[2025-08-31T15:10:58.523+0000] {subprocess.py:93} INFO -  'downloader/response_bytes': 5011,
+[2025-08-31T15:10:58.523+0000] {subprocess.py:93} INFO -  'downloader/response_count': 3,
+[2025-08-31T15:10:58.523+0000] {subprocess.py:93} INFO -  'downloader/response_status_count/200': 3,
+[2025-08-31T15:10:58.523+0000] {subprocess.py:93} INFO -  'elapsed_time_seconds': 71.751378,
+[2025-08-31T15:10:58.523+0000] {subprocess.py:93} INFO -  'finish_reason': 'finished',
+[2025-08-31T15:10:58.523+0000] {subprocess.py:93} INFO -  'finish_time': datetime.datetime(2025, 8, 31, 15, 10, 58, 511690, tzinfo=datetime.timezone.utc),
+[2025-08-31T15:10:58.524+0000] {subprocess.py:93} INFO -  'items_per_minute': 0.0,
+[2025-08-31T15:10:58.524+0000] {subprocess.py:93} INFO -  'log_count/DEBUG': 12,
+[2025-08-31T15:10:58.524+0000] {subprocess.py:93} INFO -  'log_count/ERROR': 2,
+[2025-08-31T15:10:58.524+0000] {subprocess.py:93} INFO -  'log_count/INFO': 11,
+[2025-08-31T15:10:58.524+0000] {subprocess.py:93} INFO -  'log_count/WARNING': 2,
+[2025-08-31T15:10:58.524+0000] {subprocess.py:93} INFO -  'memusage/max': 201076736,
+[2025-08-31T15:10:58.524+0000] {subprocess.py:93} INFO -  'memusage/startup': 198606848,
+[2025-08-31T15:10:58.525+0000] {subprocess.py:93} INFO -  'response_received_count': 3,
+[2025-08-31T15:10:58.525+0000] {subprocess.py:93} INFO -  'responses_per_minute': 2.535211267605634,
+[2025-08-31T15:10:58.525+0000] {subprocess.py:93} INFO -  'scheduler/dequeued': 3,
+[2025-08-31T15:10:58.525+0000] {subprocess.py:93} INFO -  'scheduler/dequeued/memory': 3,
+[2025-08-31T15:10:58.525+0000] {subprocess.py:93} INFO -  'scheduler/enqueued': 3,
+[2025-08-31T15:10:58.525+0000] {subprocess.py:93} INFO -  'scheduler/enqueued/memory': 3,
+[2025-08-31T15:10:58.525+0000] {subprocess.py:93} INFO -  'start_time': datetime.datetime(2025, 8, 31, 15, 9, 46, 760312, tzinfo=datetime.timezone.utc)}
+[2025-08-31T15:10:58.526+0000] {subprocess.py:93} INFO - 2025-08-31 15:10:58 [scrapy.core.engine] INFO: Spider closed (finished)
+[2025-08-31T15:10:58.644+0000] {subprocess.py:93} INFO - [+] spider running Normal mode [+]
+[2025-08-31T15:10:58.645+0000] {subprocess.py:93} INFO - [36m
+[2025-08-31T15:10:58.645+0000] {subprocess.py:93} INFO - =============== Processed Profile : 1 ===============
+[2025-08-31T15:10:58.645+0000] {subprocess.py:93} INFO - [32m=========== New Profile Id = 35623 ========
+[2025-08-31T15:10:58.645+0000] {subprocess.py:93} INFO - [33mCreated At: 2025-08-31 15:09:50
+[2025-08-31T15:10:58.645+0000] {subprocess.py:93} INFO - [0m
+[2025-08-31T15:10:58.645+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:10:58.645+0000] {subprocess.py:93} INFO - =============== Trust Score Calculation ===============
+[2025-08-31T15:10:58.645+0000] {subprocess.py:93} INFO - Domain: npiregistry.cms.hhs.gov
+[2025-08-31T15:10:58.645+0000] {subprocess.py:93} INFO -  Google Reputation Score   : 100
+[2025-08-31T15:10:58.646+0000] {subprocess.py:93} INFO -  Domain Age Score          : 40
+[2025-08-31T15:10:58.646+0000] {subprocess.py:93} INFO -  Data Completeness Score   : 100
+[2025-08-31T15:10:58.646+0000] {subprocess.py:93} INFO -  >>> Final Trust Score     : 88.0
+[2025-08-31T15:10:58.646+0000] {subprocess.py:93} INFO - =======================================================
+[2025-08-31T15:10:58.646+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO - [36m
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO - =============== Processed Profile : 2 ===============
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO - [32m=========== New Profile Id = 39648 ========
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO - [33mCreated At: 2025-08-31 15:10:23
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO - [0m
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO - =============== Trust Score Calculation ===============
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO - Domain: npiregistry.cms.hhs.gov
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO -  Google Reputation Score   : 100
+[2025-08-31T15:10:58.647+0000] {subprocess.py:93} INFO -  Domain Age Score          : 40
+[2025-08-31T15:10:58.648+0000] {subprocess.py:93} INFO -  Data Completeness Score   : 100
+[2025-08-31T15:10:58.648+0000] {subprocess.py:93} INFO -  >>> Final Trust Score     : 88.0
+[2025-08-31T15:10:58.648+0000] {subprocess.py:93} INFO - =======================================================
+[2025-08-31T15:10:58.648+0000] {subprocess.py:93} INFO - 
+[2025-08-31T15:10:59.170+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-08-31T15:10:59.171+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-31T15:10:59.211+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dynamic_scrapy_spiders, task_id=all_spiders, run_id=manual__2025-08-31T15:09:38.054196+00:00, execution_date=20250831T150938, start_date=20250831T150942, end_date=20250831T151059
+[2025-08-31T15:10:59.247+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-08-31T15:10:59.266+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-31T15:10:59.268+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
