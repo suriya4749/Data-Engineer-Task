@@ -1,5 +1,9 @@
 import logging
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from a .env file (if present)
+load_dotenv()
 
 BOT_NAME = "scraper"
 
@@ -11,8 +15,11 @@ logging.getLogger("pymongo").setLevel(logging.ERROR)
 # -------------------
 # MongoDB configs (Docker service name or env override)
 # -------------------
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
-MONGO_DATABASE = os.getenv("MONGO_DATABASE", "identity_db")
+MONGO_URI = os.getenv(
+    "MONGO_URI",
+    "mongodb://host.docker.internal:27017"  # fallback for local machine
+)
+MONGO_DATABASE = os.getenv("MONGO_DB", "identity_db")
 MONGO_COLLECTION = os.getenv("MONGO_COLLECTION", "profiles")
 DUPLICATES_COLLECTION = os.getenv("DUPLICATES_COLLECTION", "profiles_duplicates")
 
