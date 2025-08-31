@@ -24,8 +24,11 @@ class trucompareSpider(scrapy.Spider):
             return
 
         # Crawl all CSVs
-        for link in csv_links:
-            file_url = urljoin(response.url, link)
+        # for link in csv_links:
+        #     file_url = urljoin(response.url, link)
+        #     yield scrapy.Request(file_url, callback=self.parse_csv)
+        if csv_links:
+            file_url = urljoin(response.url, csv_links[0])  # only first CSV
             yield scrapy.Request(file_url, callback=self.parse_csv)
 
     def parse_csv(self, response):
